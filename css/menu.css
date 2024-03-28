@@ -4,7 +4,7 @@
 header button {
     border: none;
     border-radius: 20px;
-    background: transparent;
+    background-color: #07030a;
     cursor: pointer;
 }
 
@@ -12,7 +12,6 @@ header button:hover {
     -webkit-box-shadow: 0px 0px 5px 4px rgba(255,255,255,1);
     -moz-box-shadow: 0px 0px 5px 4px rgba(255,255,255,1);
     box-shadow: 0px 0px 5px 4px rgba(255,255,255,1);
-    background-color: #07030a;
     transition: all 1s;
 
 }

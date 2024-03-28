@@ -47,6 +47,13 @@
 
 }
 
+.container-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-presentation {
     margin-top: 55px;
     display: flex;

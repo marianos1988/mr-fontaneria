@@ -53,7 +53,7 @@
     position: absolute;
     top: 50%;
     left: 3rem;
-    transform: translateY(-50%);
+    transform: translate(30px,-50%);
     font: 400 0.85rem helvetica,sans-serif;
     color: white;
     text-shadow: 0 3px 8px rgba(0,0,0,0.5);
@@ -158,6 +158,7 @@
   
   @media (width <= 650px) {
     .box-images .slider .content {
+      transform: translate(30px,-70%);
       & .title        { font-size: 0.9rem; }
       & .description  { font-size: 0.65rem; }
       & button        { font-size: 0.7rem; }
