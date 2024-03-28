@@ -1,4 +1,4 @@
-console.clear();
+
 
 const cardsContainer = document.querySelector(".cards-co");
 const cardsContainerInner = document.querySelector(".cards__inner");
