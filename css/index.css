@@ -47,6 +47,27 @@
 
 }
 
+.wp-float {
+  z-index: 999;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+.wp-float:hover {
+  background-color: #2bfc77;
+  transition: all .5s;
+}
+.fa-whatsapp {
+  font-size: 60px;
+}
+
 .container-index {
   display: flex;
   flex-direction: column;
@@ -196,5 +217,15 @@
         transform: translateX(10px);
     }
 
+    .wp-float {
+      transform: scale(.7);
+    }
+
+}
+
+@media (min-width:601px) AND (max-width:850px) {
+  .wp-float {
+    transform: scale(.8);
+  }
 }
 
