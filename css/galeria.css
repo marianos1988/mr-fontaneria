@@ -4,6 +4,7 @@
  
     box-sizing: border-box;
     margin-top: 50px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     width: 100%;

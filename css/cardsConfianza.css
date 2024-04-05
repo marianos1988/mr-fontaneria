@@ -4,6 +4,7 @@
 .box-confianza {
  
   margin-top: 50px;
+  margin-bottom: 25px;
   display: grid;
   place-items: center;
   width: 95%;

@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 .container-header {
@@ -53,8 +54,8 @@
   width: 60px;
   height: 60px;
   background-color: #25d366;
-  bottom: 40px;
-  right: 40px;
+  bottom: 30px;
+  right: 30px;
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -135,6 +136,7 @@
     font-weight: 400;
     color: white;
     margin-bottom: 24px;
+
   }
   
   .card-presentation .card button {
