@@ -55,7 +55,7 @@
     height: 50px; /* Altura del elemento centrado */
     top: 50%;
     left: 65%;
-    transform: translate(-35%, -50%);
+    transform: translate(-76px, -37px);
    
 }
 .container-gallery .all-img-gallery img {
