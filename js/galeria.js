@@ -7,7 +7,7 @@ const loadPhotos = (quanPhotos) => {
   }
 }
 
-//Galeria 168 fotos
+//Generar galeria fotos
 const setGaleria = (quanPhotos)=> {
 
   let galeria = `
@@ -27,7 +27,7 @@ const setGaleria = (quanPhotos)=> {
 
   document.querySelector(".all-img-gallery").innerHTML= galeria;
 
-  // Ejecuta spinner galeria
+// Ejecuta spinner galeria
 loadPhotos(168);
 
 }
