@@ -93,28 +93,32 @@
             </div>
       
             <div class="contactForm">
-              <form>
+              <form action="https://formsubmit.co/mariano.floresta2@gmail.com" id="submit-form-contactus" method="POST">
                 <h2>Envia tu consulta</h2>
                 <div class="inputBox">
-                  <input type="text" name="" required="required">
+                  <input type="text" name="name" id="form-name" required="required">
                   <span>Nombre y Apellido</span>
                 </div>
                 <div class="inputBox">
-                  <input type="text" name="" required="required">
+                  <input type="text" name="email" id="form-email" required="required">
                   <span>Email</span>
                 </div>
                 <div class="inputBox">
-                  <input type="text" name="" required="required">
+                  <input type="text" name="phone" id="form-phone" required="required">
                   <span>Telefono</span>
                 </div>
                 <div class="inputBox">
-                  <textarea required="required"></textarea>
+                  <textarea required="required" name="comment" id="form-comments"></textarea>
                   <span>Escribi tu consulta...</span>
                 </div>
                 <div class="inputBox">
                   <!-- <input type="submit" value="Enviar"> -->
-                  <button class="custom-btn btn-14">Enviar</button>
+                  <button type="submit" id="form-send" class="custom-btn btn-14">Enviar</button>
+                  <div class="message"></div>
+                  <div class="box-spinner"></div>
                 </div>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/mr-fontaneria/contacto.html">
+                <input type="hidden" name="_captcha" value="false">
               </form>
             </div>
           </div>
@@ -158,6 +162,7 @@
     <script src="./js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/contacto.js"></script>
     <!-- <script src="./js/images.js"></script> -->
     <!-- <script src="./js/servicios.js"></script> -->
     <!-- <script src="./js/galeria.js"></script> -->
