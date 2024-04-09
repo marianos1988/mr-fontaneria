@@ -235,9 +235,7 @@ body {
     .card-presentation .card {
         padding-bottom: 80px;
     }
-    .card-presentation .card .box-icos {
-        transform: translateY(110px);
-    }
+
   }
 
 
@@ -268,6 +266,12 @@ body {
   }
 }
 
+@media (max-width:740px) {
+      .card-presentation .card .box-icos {
+        transform: translateY(85px);
+    }
+}
+
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -276,4 +280,6 @@ body {
     opacity: 1;
   }
 }
+
+
 
