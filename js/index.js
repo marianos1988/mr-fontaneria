@@ -290,6 +290,21 @@ const contacto = `
   </article>
 `;
 
+//Activar o desactivar Whatsapp
+const ActiveOrInactiveWP = (activoOInactivo) =>{
+  if(activoOInactivo === "activar") {
+    if(document.querySelector(".wp-float").classList.contains("wp-inactive")) {
+      document.querySelector(".wp-float").classList.replace("wp-inactive","wp-active");
+    }
+  }
+  else if(activoOInactivo === "inactivar") {
+    if(document.querySelector(".wp-float").classList.contains("wp-active")) {
+      document.querySelector(".wp-float").classList.replace("wp-active","wp-inactive");
+    }
+  }
+
+}
+
 // Funcion Carousel
 const runCarousel = () => {
   const slider = document.querySelector('.slider');
@@ -474,7 +489,7 @@ document.querySelector("#inicio-nav").addEventListener("click",()=>{
   toggleMenu();
   runCarousel();
   runCardsConfianza();
-  
+  ActiveOrInactiveWP("activar");
 });
 
 //Menu Galeria
@@ -482,6 +497,7 @@ document.querySelector("#galeria-nav").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML= galeria;
   setGaleria(168);
   toggleMenu();
+  ActiveOrInactiveWP("activar");
 });
 
 //Menu Servicios
@@ -489,6 +505,7 @@ document.querySelector("#servicios-nav").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML= servicios;
   runServicios();
   toggleMenu();
+  ActiveOrInactiveWP("activar");
 });
 
 //Menu Contacto
@@ -497,7 +514,8 @@ document.querySelector("#contacto-nav").addEventListener("click",()=>{
   sendForm();
   toggleMenu();
   document.querySelector("#form-send").addEventListener("click", sendForm);
-  document.querySelector
+  ActiveOrInactiveWP("inactivar");
+
 });
 
 
@@ -506,6 +524,7 @@ document.querySelector("#inicio-footer").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML = index;
   runCarousel();
   runCardsConfianza();
+  ActiveOrInactiveWP("activar");
   window.scroll({
     top: 0,
     left: 0,
@@ -517,6 +536,7 @@ document.querySelector("#inicio-footer").addEventListener("click",()=>{
 document.querySelector("#galeria-footer").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML= galeria;
   setGaleria(168);
+  ActiveOrInactiveWP("activar");
   window.scroll({
     top: 0,
     left: 0,
@@ -528,7 +548,8 @@ document.querySelector("#galeria-footer").addEventListener("click",()=>{
 //Menu Servicios Footer
 document.querySelector("#servicios-footer").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML= servicios;
-  runServicios
+  runServicios();
+  ActiveOrInactiveWP("activar");
   window.scroll({
     top: 0,
     left: 0,
@@ -541,6 +562,7 @@ document.querySelector("#servicios-footer").addEventListener("click",()=>{
 document.querySelector("#contacto-footer").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML= contacto;
   sendForm();
+  ActiveOrInactiveWP("inactivar");
   document.querySelector("#form-send").addEventListener("click", sendForm);
   window.scroll({
     top: 0,
