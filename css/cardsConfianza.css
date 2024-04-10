@@ -16,8 +16,8 @@
   background: radial-gradient(circle, rgba(0,2,28,1) 0%, rgb(3, 34, 170) 0%);
   color: #ddd;
   -webkit-box-shadow: 0px 0px 20px 8px rgba(153,153,153,1);
--moz-box-shadow: 0px 0px 20px 8px rgba(153,153,153,1);
-box-shadow: 0px 0px 20px 8px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 0px 20px 8px rgba(153,153,153,1);
+  box-shadow: 0px 0px 20px 8px rgba(153,153,153,1);
 }
 
 .box-confianza .card__bullets {

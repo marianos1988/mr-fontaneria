@@ -79,7 +79,7 @@ const index = `
           <button>Contactanos:</button>
           <div class="box-icos">
             <a href="tel:+34690644690"><img class="tel" src="./img/tel.png" alt=""></a>
-            <a href="https://web.whatsapp.com/send?phone=+34690644690"><img class="ws" src="./img/whatsapp.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=+34690644690" target="_blank"><img class="ws" src="./img/whatsapp.png" alt=""></a>
           </div>
         </div>
       </div>
@@ -234,7 +234,7 @@ const contacto = `
           </div>
         </div>
         <div class="box">
-          <a href="https://web.whatsapp.com/send?phone=+34690644690" target="_blank"><div class="icon"><ion-icon class="ion-icon" name="logo-whatsapp"></ion-icon></ion-icon></div></a>
+        <a href="https://api.whatsapp.com/send?phone=+34690644690" target="_blank"><div class="icon"><ion-icon class="ion-icon" name="logo-whatsapp"></ion-icon></ion-icon></div></a>
           <div class="text">
             <h3>Whatsapp</h3>
             <p>34 690 644690

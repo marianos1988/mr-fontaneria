@@ -88,6 +88,10 @@
         cursor: pointer;
     
     }
+
+    .container-gallery h2 {
+        font-size: 1.6rem;
+    }
 }
 
 @media (min-width:451px) AND (max-width:500px) {
@@ -99,6 +103,9 @@
         border-radius: 10%;
         cursor: pointer;
     
+    }
+    .container-gallery h2 {
+        font-size: 2rem;
     }
 }
 
