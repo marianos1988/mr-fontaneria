@@ -1,4 +1,15 @@
 
+  .container-carousel {
+    animation: aparecer .1s ease-in;
+  }
+
+  .carousel-active {
+    display: inherit;
+  }
+
+  .carousel-inactive {
+    display: none;
+  }
   
   .box-images {
 
@@ -39,6 +50,25 @@
     &:nth-child(4) { left: calc(46% + 100px); }
     &:nth-child(5) { left: calc(44% + 200px); }
     &:nth-child(6) { left: calc(50% + 280px); opacity: 0; }
+  }
+
+  .box-images .slider .item-1 {
+    background-image: url(../img/carousel-1.jpg);
+  }
+  .box-images .slider .item-2 {
+    background-image: url(../img/carousel-2.jpg);
+  }
+  .box-images .slider .item-3 {
+    background-image: url(../img/carousel-3.jpg);
+  }
+  .box-images .slider .item-4 {
+    background-image: url(../img/carousel-4.jpg);
+  }
+  .box-images .slider .item-5 {
+    background-image: url(../img/carousel-5.jpg);
+  }
+  .box-images .slider .item-6 {
+    background-image: url(../img/carousel-6.jpg);
   }
 
   .box-images .slider .content {

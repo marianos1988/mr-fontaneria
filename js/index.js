@@ -2,71 +2,9 @@ const toggleMenu = () => document.body.classList.toggle("open");
 
 document.querySelector(".burger").addEventListener("click", toggleMenu);
 
-//Contenido index
+//Contenido index 
 const index = `
   <section class="container-index">
-    <article class="box-images">
-      <ul class='slider'>
-        <li class='item' style="background-image: url('./img/carousel-1.jpg')">
-          <div class='content'>
-            <h2 class='title'>"Lossless Youths"</h2>
-            <p class='description'> Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-            praesentium nisi. Id laboriosam ipsam enim.  </p>
-            <button>Read More</button>
-          </div>
-        </li>
-        <li class='item' style="background-image: url('./img/carousel-2.jpg')">
-          <div class='content'>
-            <h2 class='title'>"Estrange Bond"</h2>
-            <p class='description'> Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-            praesentium nisi. Id laboriosam ipsam enim.  </p>
-            <button>Read More</button>
-          </div>
-        </li>
-        <li class='item' style="background-image: url('./img/carousel-3.jpg')">
-          <div class='content'>
-            <h2 class='title'>"The Gate Keeper"</h2>
-            <p class='description'> Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-            praesentium nisi. Id laboriosam ipsam enim.  </p>
-            <button>Read More</button>
-          </div>
-        </li>
-        <li class='item' style="background-image: url('./img/carousel-4.jpg')">
-          <div class='content'>
-            <h2 class='title'>"Last Trace Of Us"</h2>
-            <p class='description'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
-            </p>
-            <button>Read More</button>
-          </div>
-        </li>
-        <li class='item' style="background-image: url('./img/carousel-5.jpg')">
-          <div class='content'>
-            <h2 class='title'>"Urban Decay"</h2>
-            <p class='description'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
-            </p>
-            <button>Read More</button>
-          </div>
-        </li>
-        <li class='item' style="background-image: url('./img/carousel-6.jpg')">
-          <div class='content'>
-            <h2 class='title'>"The Migration"</h2>
-            <p class='description'> Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-            praesentium nisi. Id laboriosam ipsam enim.  </p>
-            <button>Read More</button>
-          </div>
-        </li>
-      </ul>
-      <nav class='nav'>
-        <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
-        <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
-      </nav>
-    </article>
     <article class="card-presentation">
       <div class="card">
         <img src="./img/card-presentation.jpg" />
@@ -305,18 +243,37 @@ const ActiveOrInactiveWP = (activoOInactivo) =>{
 
 }
 
-// Funcion Carousel
-const runCarousel = () => {
-  const slider = document.querySelector('.slider');
+//Activar o desactivar Carousel
+const ActiveOrInactiveCarousel = (activoOInactivo) =>{
+  if(activoOInactivo === "activar") {
+    if(document.querySelector(".container-carousel").classList.contains("carousel-inactive")) {
+      document.querySelector(".container-carousel").classList.replace("carousel-inactive","carousel-active");
+    }
+  }
+  else if(activoOInactivo === "inactivar") {
+    if(document.querySelector(".container-carousel").classList.contains("carousel-active")) {
+      document.querySelector(".container-carousel").classList.replace("carousel-active","carousel-inactive");
+    }
+  }
 
+}
+
+
+// Funcion Carousel
 function activate(e) {
   const items = document.querySelectorAll('.item');
   e.target.matches('.next') && slider.append(items[0])
   e.target.matches('.prev') && slider.prepend(items[items.length-1]);
 }
-
+const slider = document.querySelector('.slider');
 document.addEventListener('click',activate,false);
+const runCarousel = () => {
+  const slider = document.querySelector('.slider');
+  document.addEventListener('click',activate,false);
+
 }
+
+
 
 // CArds de Confianza
 const runCardsConfianza = () => {
@@ -487,9 +444,11 @@ const sendForm = ()=> {
 document.querySelector("#inicio-nav").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML = index;
   toggleMenu();
-  runCarousel();
+
   runCardsConfianza();
+  ActiveOrInactiveCarousel("activar");
   ActiveOrInactiveWP("activar");
+  runCarousel();
 });
 
 //Menu Galeria
@@ -498,6 +457,7 @@ document.querySelector("#galeria-nav").addEventListener("click",()=>{
   setGaleria(168);
   toggleMenu();
   ActiveOrInactiveWP("activar");
+  ActiveOrInactiveCarousel("inactivar");
 });
 
 //Menu Servicios
@@ -506,6 +466,7 @@ document.querySelector("#servicios-nav").addEventListener("click",()=>{
   runServicios();
   toggleMenu();
   ActiveOrInactiveWP("activar");
+  ActiveOrInactiveCarousel("inactivar");
 });
 
 //Menu Contacto
@@ -515,6 +476,7 @@ document.querySelector("#contacto-nav").addEventListener("click",()=>{
   toggleMenu();
   document.querySelector("#form-send").addEventListener("click", sendForm);
   ActiveOrInactiveWP("inactivar");
+  ActiveOrInactiveCarousel("inactivar");
 
 });
 
@@ -522,6 +484,7 @@ document.querySelector("#contacto-nav").addEventListener("click",()=>{
 // Menu Inicio Footer
 document.querySelector("#inicio-footer").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML = index;
+  ActiveOrInactiveCarousel("activar");
   runCarousel();
   runCardsConfianza();
   ActiveOrInactiveWP("activar");
@@ -537,6 +500,7 @@ document.querySelector("#galeria-footer").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML= galeria;
   setGaleria(168);
   ActiveOrInactiveWP("activar");
+  ActiveOrInactiveCarousel("inactivar");
   window.scroll({
     top: 0,
     left: 0,
@@ -549,6 +513,7 @@ document.querySelector("#galeria-footer").addEventListener("click",()=>{
 document.querySelector("#servicios-footer").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML= servicios;
   runServicios();
+  ActiveOrInactiveCarousel("inactivar");
   ActiveOrInactiveWP("activar");
   window.scroll({
     top: 0,
@@ -562,6 +527,7 @@ document.querySelector("#servicios-footer").addEventListener("click",()=>{
 document.querySelector("#contacto-footer").addEventListener("click",()=>{
   document.querySelector("#main").innerHTML= contacto;
   sendForm();
+  ActiveOrInactiveCarousel("inactivar");
   ActiveOrInactiveWP("inactivar");
   document.querySelector("#form-send").addEventListener("click", sendForm);
   window.scroll({
