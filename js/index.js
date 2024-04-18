@@ -9,12 +9,12 @@ const index = `
       <div class="card">
         <img src="./img/card-presentation.jpg" />
         <div>
-          <h2>MR Fontaneria</h2>
-          <h3>Servicio especializado en Plomeria</h3>
+          <h2>Taller de Fontaneria</h2>
+          <h3>Servicio de fontaneria con amplia experiencia en el sector</h3>
           <p>
-            Reparaciones y destapaciones de tuberias
+            Localizacion y reparacion de tuberias AFC, ACS, calefaccion, gas y aire acondicionado
           </p>
-          <button>Contactanos:</button>
+          <button>Contacto:</button>
           <div class="box-icos">
             <a href="tel:+34690644690"><img class="tel" src="./img/tel.png" alt=""></a>
             <a href="https://wa.me/34690644690" target="_blank"><img class="ws" src="./img/whatsapp.png" alt=""></a>
@@ -33,7 +33,7 @@ const index = `
               <ul role="list" class="card__bullets flow">
                 <li>Hacemos presupuestos en el acto</li>
                 <li>Presupuestos sin cargo</li>
-                <li>Relevamiento de trabajos a realizar</li>
+                <li>Informe tecnico del trabajo a realizar</li>
               </ul>
             </div>
       
@@ -41,8 +41,8 @@ const index = `
               <p class="card__price">Personal Especializado</p>
               <ul role="list" class="card__bullets flow">
                 <li>Trabajos garantizados y confiables</li>
-                <li>Arreglos y reparaciones en el acto</li>
-                <li>Armado de cañerias de alta calidad</li>
+                <li>Localizaciones y reparaciones en el acto</li>
+                <li>Instalaciones con materiales de alta calidad</li>
               </ul>
             </div>
       
@@ -50,9 +50,9 @@ const index = `
 
               <p class="card__price">Materiales de alto rendimiento</p>
               <ul role="list" class="card__bullets flow">
-                <li>Trabajos de estructuracion con cañerias de primera calidad</li>
-                <li>Trabajos ordenados</li>
-                <li>Mejores soluciones</li>
+                <li>Materiales homologados</li>
+                <li>Materiales primera calidad</li>
+                <li>Vida util de los materiales garantizados</li>
               </ul>
             </div>
           </div>
@@ -72,7 +72,7 @@ const galeria = `
 //Contenido servicios
 const servicios = `
   <article class="container-servicios">
-    <h2>Servicios Especiales</h2>
+    <h2>Servicios Especializados</h2>
     <div class="slider-servicios">
       <div class="controls-servicios">
         <div class="up-servicios">
@@ -86,39 +86,33 @@ const servicios = `
       <div class="wrapper-servicios">
         <div class="left-servicios">
           <div>
-            <h2>Plomeria</h2>
+            <h2>Fontaneria</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quia possimus aperiam iusto praesentium maxime error? Aliquid quidem nesciunt numquam possimus cumque pariatur, quos nostrum nihil quae, iure asperiores voluptas.
+              Trabajos de fontaneria, reparaciones o sustitucion de líneas de drenaje rotas, drenajes obstruidos, grifos, etc. reparación de aparatos domésticos e isntalaciones. Instalación y mantenimiento de sistemas de calefaccion de gas y líquido (unidades de aire acondicionado, radiadores, etc.)
             </p>
           </div>
 
           <div>
-            <h2>Calefones</h2>
+            <h2>Calefación</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quia possimus aperiam iusto praesentium maxime error? Aliquid quidem nesciunt numquam possimus cumque pariatur, quos nostrum nihil quae, iure asperiores voluptas.
+              Instalación de tuberías de calefacción par aagua caliente o fría. Instalacion de suelos radiantes, mantenimiento y mejoras.
             </p>
           </div>
 
           <div>
-            <h2>Cañerias</h2>
+            <h2>Instalaciones</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fuga magnam facere alias dignissimos obcaecati ipsum tempora. Ab ratione illo cum. Ab dolorum vitae voluptas dolor incidunt quisquam animi amet.
+              Restauración de tuberías de agua sanitaría fría o caliente. Aumento del flujo del agua, reparación de fugas por pequeñas que sean, aumento de la calidad y limpieza del agua, etc.
             </p>
           </div>
 
           <div>
-            <h2>Pinchaduras</h2>
+            <h2>Reparaciones</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, velit, deleniti doloribus expedita nemo accusamus nihil possimus voluptates officia consequuntur assumenda culpa, non sint incidunt cumque inventore veniam quam delectus.
+              Localización y reparación de tuberias AFS, ACS, calefacciones, gas, aire acondicionados, grifería, baños, trabajos generales. 
             </p>
           </div>
 
-          <div>
-            <h2>Insumos</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium odit culpa distinctio aliquid dolores, quae ut, harum veniam adipisci eos illo nisi excepturi commodi molestiae molestias? Maxime possimus id rem.
-            </p>
-          </div>
         </div>
         <div class="right-servicios">
           <div>
@@ -145,6 +139,7 @@ const servicios = `
     </div>
   </article>
 `;
+
 //Contenido Contacto
 const contacto = `
   <article class="container-contacto">
