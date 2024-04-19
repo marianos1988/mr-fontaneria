@@ -119,8 +119,13 @@ color: transparent;
   color: #555;
   text-align: justify;
 }
+.slider-servicios .wrapper-servicios .right-servicios > div {
+  position: relative;
+}
+
 
 .slider-servicios .wrapper-servicios .right-servicios > div img {
+
   width: 100%;
   height: 100%;
   object-fit: obtain;
@@ -129,6 +134,7 @@ color: transparent;
 .slider-servicios .wrapper-servicios .right-servicios div:nth-child(1) {
   margin-top: -400vh;
 }
+
 
 @media (min-width:350px) AND (max-width:370px) {
   .slider-servicios .wrapper-servicios .left-servicios > div h2 {
