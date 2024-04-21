@@ -140,20 +140,13 @@ color: transparent;
 }
 
 
-@media (min-width:350px) AND (max-width:370px) {
-  .slider-servicios .wrapper-servicios .left-servicios > div h2 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    transform: translateX(-25px);
 
-  }
-}
 
 @media (min-width:350px) AND (max-width:440px) {
     .slider-servicios .wrapper-servicios .left-servicios > div h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         font-weight: 500;
-        transform: translateX(-25px);
+        transform: translateX(-35px);
 
       }
       
@@ -165,7 +158,7 @@ color: transparent;
 
       }
       .slider-servicios .wrapper-servicios .left-servicios > div {
-        width: 90%;
+        width: 100%;
         height: 100%;
         transition: all 0.5s ease-in-out;
      }
