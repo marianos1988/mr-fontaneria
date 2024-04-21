@@ -144,9 +144,9 @@ color: transparent;
 
 @media (min-width:350px) AND (max-width:440px) {
     .slider-servicios .wrapper-servicios .left-servicios > div h2 {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         font-weight: 500;
-        transform: translateX(-35px);
+        transform: translateX(-42px);
 
       }
       
