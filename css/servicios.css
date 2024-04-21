@@ -25,6 +25,7 @@ color: transparent;
 }
 
 .slider-servicios {
+  position: relative;
   width: 100%;
   height: 100vh;
 }
@@ -33,14 +34,14 @@ color: transparent;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 74%);
+  transform: translate(-50px, -364px);
   width: 100px;
   height: 100px;
   z-index: 2;
 }
 
 .slider-servicios .controls-servicios > div {
-  position: absolute;
+
   width: 50px;
   height: 50px;
   text-align: center;
@@ -50,13 +51,7 @@ color: transparent;
   transition: all 0.2s ease-in-out;
 }
 
-.slider-servicios .controls-servicios > .up-servicios:active {
-  transform: translateY(-10px);
-}
 
-.slider-servicios .controls-servicios > .down-servicios:active {
-  transform: translateY(10px);
-}
 
 .slider-servicios .controls-servicios > .up-servicios {
   top: 0px;
@@ -64,6 +59,8 @@ color: transparent;
   background: #fff;
   color: #111;
   border-radius: 0 5px 5px 0;
+  transform: translate(50px,0px);
+  
 }
 
 .slider-servicios .controls-servicios > .down-servicios {
@@ -72,6 +69,13 @@ color: transparent;
   background: linear-gradient( rgb(3, 34, 170) 0%, #3b83bd 100%);
   color: #fff;
   border-radius: 5px 0 0 5px;
+}
+.slider-servicios .controls-servicios > .up-servicios:active {
+  transform: translate(50px,-10px);
+}
+
+.slider-servicios .controls-servicios > .down-servicios:active {
+  transform: translate(0px,10px);
 }
 
 .slider-servicios .wrapper-servicios {
@@ -145,7 +149,7 @@ color: transparent;
   }
 }
 
-@media (min-width:350px) AND (max-width:600px) {
+@media (min-width:350px) AND (max-width:440px) {
     .slider-servicios .wrapper-servicios .left-servicios > div h2 {
         font-size: 1.8rem;
         font-weight: 500;
@@ -165,44 +169,39 @@ color: transparent;
         height: 100%;
         transition: all 0.5s ease-in-out;
      }
+     .slider-servicios .controls-servicios {
+      transform: translate(-50px,-363px);
+      
+      }
+    .slider-servicios .controls-servicios > .up-servicios {
 
-
-}
-
-@media (min-width:350px) AND (max-width:440px) {
-    .slider-servicios .controls-servicios {
-        transform: translate(-50px,139px);
-        
-     }
-     .slider-servicios .controls-servicios > .up-servicios {
-
-        transform: scale(.6) translate(-17px,-13px);
+        transform: scale(.6) translate(66px,-13px);
     }
 
     .slider-servicios .controls-servicios > .down-servicios {
 
-        transform: scale(.6) translate(17px, -46px);
+      transform: scale(.6) translate(17px, -46px);
     }
     .slider-servicios .controls-servicios > .up-servicios:active {
-        transform: scale(.6) translate(-17px,-23px);
+        transform: scale(.6) translate(66px,-23px);
       }
-      
-      .slider-servicios .controls-servicios > .down-servicios:active {
-        transform: scale(.6) translate(17px,-36px);
-      }
+    
+    .slider-servicios .controls-servicios > .down-servicios:active {
+      transform: scale(.6) translate(17px,-36px);
+    }
+
 }
-@media (min-width:441px) AND (max-width:600px) {
-  
-}
+
+
 @media (min-width:441px) AND (max-width:600px) {
 
     .slider-servicios .controls-servicios {
-        transform: translate(-50px,141px);
+        transform: translate(-50px, -363px);
         
      }
      .slider-servicios .controls-servicios > .up-servicios {
 
-        transform: scale(.8) translate(-6px,5px);
+        transform: scale(.8) translate(56px,6px);
     }
 
     .slider-servicios .controls-servicios > .down-servicios {
@@ -210,13 +209,30 @@ color: transparent;
         transform: scale(.8) translate(6px, -7px);
     }
     .slider-servicios .controls-servicios > .up-servicios:active {
-        transform: scale(.8) translate(-6px,-5px);
+        transform: scale(.8) translate(56px,-4px);
       }
       
       .slider-servicios .controls-servicios > .down-servicios:active {
         transform: scale(.8) translate(6px,7px);
       }
+
+      .slider-servicios .wrapper-servicios .left-servicios > div h2 {
+
+        font-size: 2rem;
+        font-weight: 600;
+        transform: translateX(-38px);
+
+      }
+      
+      .slider-servicios .wrapper-servicios .left-servicios > div p {
+        font-size: 1.3rem;
+        font-weight: 300;
+        transform: translateX(-20px);
+
+      }
 }
+
+
 
 @media (min-width:601px) AND (max-width:750px) {
     .slider-servicios .wrapper-servicios .left-servicios > div h2 {
@@ -227,16 +243,10 @@ color: transparent;
       }
       
       .slider-servicios .wrapper-servicios .left-servicios > div p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 300;
         transform: translateX(-15px);
 
       }
 }
 
-@media (min-width:495px) AND (max-width:600px) {
-  .slider-servicios .controls-servicios {
-    transform: translate(-50px,86px);
-    
- }
-}
