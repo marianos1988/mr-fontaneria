@@ -14,6 +14,10 @@ body {
  animation: aparecer .5s ease-in;
 }
 
+main {
+  position: relative;
+}
+
 .container-header {
 
     width: 100%;

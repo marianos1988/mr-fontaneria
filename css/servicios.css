@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
+.container-servicios {
+  position: relative;
+}
 .container-servicios h2 {
 
   text-align: center;
@@ -30,17 +33,17 @@ color: transparent;
   height: 100vh;
 }
 
-.slider-servicios .controls-servicios {
+.controls-servicios {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50px, -364px);
+  transform: translate(-50px, -174px);
   width: 100px;
   height: 100px;
   z-index: 2;
 }
 
-.slider-servicios .controls-servicios > div {
+.controls-servicios > div {
 
   width: 50px;
   height: 50px;
@@ -53,7 +56,7 @@ color: transparent;
 
 
 
-.slider-servicios .controls-servicios > .up-servicios {
+.controls-servicios > .up-servicios {
   top: 0px;
   right: 0px;
   background: #fff;
@@ -63,18 +66,18 @@ color: transparent;
   
 }
 
-.slider-servicios .controls-servicios > .down-servicios {
+.controls-servicios > .down-servicios {
   bottom: 0px;
   left: 0px;
   background: linear-gradient( rgb(3, 34, 170) 0%, #3b83bd 100%);
   color: #fff;
   border-radius: 5px 0 0 5px;
 }
-.slider-servicios .controls-servicios > .up-servicios:active {
+.controls-servicios > .up-servicios:active {
   transform: translate(50px,-10px);
 }
 
-.slider-servicios .controls-servicios > .down-servicios:active {
+.controls-servicios > .down-servicios:active {
   transform: translate(0px,10px);
 }
 
@@ -162,24 +165,24 @@ color: transparent;
         height: 100%;
         transition: all 0.5s ease-in-out;
      }
-     .slider-servicios .controls-servicios {
-      transform: translate(-50px,-363px);
+      .controls-servicios {
+      transform: translate(-50px,-179px);
       
       }
-    .slider-servicios .controls-servicios > .up-servicios {
+      .controls-servicios > .up-servicios {
 
         transform: scale(.6) translate(66px,-13px);
     }
 
-    .slider-servicios .controls-servicios > .down-servicios {
+    .controls-servicios > .down-servicios {
 
       transform: scale(.6) translate(17px, -46px);
     }
-    .slider-servicios .controls-servicios > .up-servicios:active {
+    .controls-servicios > .up-servicios:active {
         transform: scale(.6) translate(66px,-23px);
       }
     
-    .slider-servicios .controls-servicios > .down-servicios:active {
+    .controls-servicios > .down-servicios:active {
       transform: scale(.6) translate(17px,-36px);
     }
 
@@ -188,24 +191,24 @@ color: transparent;
 
 @media (min-width:441px) AND (max-width:600px) {
 
-    .slider-servicios .controls-servicios {
-        transform: translate(-50px, -363px);
+    .controls-servicios {
+        transform: translate(-50px, -174px);
         
      }
-     .slider-servicios .controls-servicios > .up-servicios {
+     .controls-servicios > .up-servicios {
 
         transform: scale(.8) translate(56px,6px);
     }
 
-    .slider-servicios .controls-servicios > .down-servicios {
+    .controls-servicios > .down-servicios {
 
         transform: scale(.8) translate(6px, -7px);
     }
-    .slider-servicios .controls-servicios > .up-servicios:active {
+    .controls-servicios > .up-servicios:active {
         transform: scale(.8) translate(56px,-4px);
       }
       
-      .slider-servicios .controls-servicios > .down-servicios:active {
+      .controls-servicios > .down-servicios:active {
         transform: scale(.8) translate(6px,7px);
       }
 
@@ -228,6 +231,11 @@ color: transparent;
 
 
 @media (min-width:601px) AND (max-width:750px) {
+
+  .controls-servicios {
+    transform: translate(-50px, -174px);
+    
+ }
     .slider-servicios .wrapper-servicios .left-servicios > div h2 {
         font-size: 2.3rem;
         font-weight: 600;
@@ -242,4 +250,15 @@ color: transparent;
 
       }
 }
+
+@media (min-height:350px) AND (max-height:500px) {
+
+  .controls-servicios {
+    transform: translate(-50px,-100px);
+    
+ }
+
+}
+
+
 

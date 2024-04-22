@@ -71,18 +71,19 @@ const galeria = `
 `;
 //Contenido servicios
 const servicios = `
+  <article
+    <div class="controls-servicios">
+      <div class="up-servicios">
+        <i class="fa fa-chevron-up"></i>
+      </div>
+      <div class="down-servicios">
+        <i class="fa fa-chevron-down"></i>
+      </div>
+    </div>
+  </article>
   <article class="container-servicios">
     <h2>Servicios Especializados</h2>
     <div class="slider-servicios">
-      <div class="controls-servicios">
-        <div class="up-servicios">
-          <i class="fa fa-chevron-up"></i>
-        </div>
-        <div class="down-servicios">
-          <i class="fa fa-chevron-down"></i>
-        </div>
-      </div>
-
       <div class="wrapper-servicios">
         <div class="left-servicios">
           <div>
@@ -369,7 +370,7 @@ const runServicios = () => {
   let currentSlide = 0;
   let totalSlides = slider.querySelectorAll(".wrapper-servicios .left-servicios > div").length - 1;
 
-  slider.querySelector(".controls-servicios .up-servicios").addEventListener("click", function () {
+  document.querySelector(".controls-servicios .up-servicios").addEventListener("click", function () {
     if (currentSlide == 0) {
       return;
     }
@@ -382,7 +383,7 @@ const runServicios = () => {
     }vh`;
   });
 
-  slider.querySelector(".controls-servicios .down-servicios").addEventListener("click", function () {
+  document.querySelector(".controls-servicios .down-servicios").addEventListener("click", function () {
     if (currentSlide == totalSlides) {
       return;
     }
