@@ -251,12 +251,28 @@ color: transparent;
       }
 }
 
-@media (min-height:350px) AND (max-height:500px) {
+@media (min-height:300px) AND (max-height:500px) {
 
   .controls-servicios {
-    transform: translate(-50px,-100px);
+    transform: translate(-50px,-85px) scale(.8);
     
  }
+ .controls-servicios > .up-servicios {
+
+  transform: scale(.6) translate(66px,-13px);
+}
+
+.controls-servicios > .down-servicios {
+
+transform: scale(.6) translate(17px, -46px);
+}
+.controls-servicios > .up-servicios:active {
+  transform: scale(.6) translate(66px,-23px);
+}
+
+.controls-servicios > .down-servicios:active {
+transform: scale(.6) translate(17px,-36px);
+}
 
 }
 
