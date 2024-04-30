@@ -94,7 +94,7 @@ const galeria = `
 `;
 //Contenido servicios
 const servicios = `
-  <article
+  <article>
     <div class="controls-servicios">
       <div class="up-servicios">
         <i class="fa fa-chevron-up"></i>
@@ -103,8 +103,8 @@ const servicios = `
         <i class="fa fa-chevron-down"></i>
       </div>
     </div>
-  </article>
-  <article class="container-servicios">
+    </article>
+    <article class="container-servicios">
     <h2>Servicios Especializados</h2>
     <div class="slider-servicios">
       <div class="wrapper-servicios">
@@ -117,7 +117,7 @@ const servicios = `
           </div>
 
           <div>
-            <h2>Calefación</h2>
+            <h2>Calefacción</h2>
             <p>
               Instalación de tuberías de calefacción para agua caliente o fría. Instalacion de suelos radiantes, mantenimiento y mejoras.
             </p>
@@ -147,24 +147,24 @@ const servicios = `
         </div>
         <div class="right-servicios">
           <div>
-            <img src="./img/servicios/servicio-5.jpg" alt="Otros trabajos" />
+            <img src="./img/servicios/servicio-5.jpg" alt="Instalacion aire acondicionado" />
           </div>
 
           <div>
-            <img src="./img/servicios/servicio-4.jpg" alt="Reparaciones" />
+            <img src="./img/servicios/servicio-4.jpg" alt="Reparaciones tuberias AFS ACS" />
           </div>
 
           <div>
-          <img src="./img/servicios/servicio-3.jpg" alt="Instalaciones" />
+          <img src="./img/servicios/servicio-3.jpg" alt="Instalaciones tuberias AFS ACS " />
           </div>
 
           <div>
-            <img src="./img/servicios/servicio-2.jpg" alt="Calefaccion" />
+            <img src="./img/servicios/servicio-2.jpg" alt="Instalacion Calefaccion" />
           </div>
 
           <div>
 
-            <img src="./img/servicios/servicio-1.jpg" alt="Fontaneria" />
+            <img src="./img/servicios/servicio-1.jpg" alt="Trabajo Fontaneria" />
             <div class="spinner-servicios"></div>
           </div>
         </div>
@@ -185,7 +185,7 @@ const contacto = `
     <div class="container">
       <div class="contactInfo">
         <div class="box">
-          <a href="https://maps.app.goo.gl/37TAv5geV1Dncxrz9" target="_blank"><div class="icon"><ion-icon class="ion-icon" name="location-outline"></ion-icon></div></a>
+          <a href="https://maps.app.goo.gl/37TAv5geV1Dncxrz9" target="_blank" alt="Provincia Vizkaya"><div class="icon"><ion-icon class="ion-icon" name="location-outline"></ion-icon></div></a>
           <div class="text">
             <h3>Domicilio</h3>
             <p>Grupo Santiago Apóstol 2,<br>Sestao - Vizcaya,</p>
@@ -200,7 +200,7 @@ const contacto = `
           </div>
         </div>
         <div class="box">
-        <a href="https://wa.me/34690644690" target="_blank"><div class="icon"><ion-icon class="ion-icon" name="logo-whatsapp"></ion-icon></ion-icon></div></a>
+        <a href="https://wa.me/34690644690" target="_blank"><div class="icon"><ion-icon class="ion-icon" name="logo-whatsapp"></ion-icon></div></a>
           <div class="text">
             <h3>Whatsapp</h3>
             <p>34 690 644690
