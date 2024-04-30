@@ -23,41 +23,64 @@ const index = `
       </div>
     </article>
     <article class="box-confianza">
-      <div class="main flow">
-        <h1 class="main__heading">Trabajos 100% Garantizados</h1>
-        <div class="main__cards cards-co">
-          <div class="cards__inner">
-            <div class="cards__card card-co">
-
-              <p class="card__price">Armado de presupuestos</p>
-              <ul role="list" class="card__bullets flow">
-                <li>Hacemos presupuestos en el acto</li>
-                <li>Presupuestos sin cargo</li>
-                <li>Informe tecnico del trabajo a realizar</li>
-              </ul>
-            </div>
-      
-            <div class="cards__card card-co">
-              <p class="card__price">Personal Especializado</p>
-              <ul role="list" class="card__bullets flow">
-                <li>Trabajos garantizados y confiables</li>
-                <li>Localizaciones y reparaciones en el acto</li>
-                <li>Instalaciones con materiales de alta calidad</li>
-              </ul>
-            </div>
-      
-            <div class="cards__card card-co">
-
-              <p class="card__price">Materiales de alto rendimiento</p>
-              <ul role="list" class="card__bullets flow">
-                <li>Materiales homologados</li>
-                <li>Materiales primera calidad</li>
-                <li>Vida util de los materiales garantizados</li>
-              </ul>
-            </div>
+      <h1 class="main__heading">Trabajos 100% Garantizados</h1>
+      <div class="flex-container">
+        <div class="flex-item bg-one tilt">
+          <div class="text">
+            <h2>Armado de presupuestos</h2>
+            <ul>
+              <li>
+                <img src="./img/tilde.png">
+                <p>Hacemos presupuestos en el acto</p>
+              </li>
+              <li>
+                <img src="./img/tilde.png">
+                <p>Presupuestos sin cargo</p>
+              </li>
+              <li>
+                <img src="./img/tilde.png">
+                <p>Informe tecnico del trabajo a realizar</p>  
+              </li>
+            </ul>
           </div>
-          
-          <div class="overlay cards__inner"></div>
+        </div>
+        <div class="flex-item bg-two tilt">
+          <div class="text">
+            <h2>Personal Especializado</h2>
+            <ul>
+              <li>
+                <img src="./img/tilde.png">
+                <p>Trabajos garantizados y confiables</p>
+              </li>
+              <li>
+                <img src="./img/tilde.png">
+                <p>Localizaciones y reparaciones en el acto</p>
+              </li>
+              <li>
+                <img src="./img/tilde.png">
+                <p>Instalaciones con materiales de alta calidad</p>  
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-item bg-three tilt">
+          <div class="text">
+            <h2>Materiales de alto rendimiento</h2>
+            <ul>
+              <li>
+                <img src="./img/tilde.png">
+                <p>Materiales homologados</p>
+              </li>
+              <li>
+                <img src="./img/tilde.png">
+                <p>Materiales primera calidad</p>
+              </li>
+              <li>
+                <img src="./img/tilde.png">
+                <p>Vida util de los materiales garantizados</p>  
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </article>
@@ -191,13 +214,6 @@ const contacto = `
             <p>ruizymirandona@gmail.com</p>
           </div>
         </div>
-        <h2 class="txt">Connect with us</h2>
-        <ul class="sci">
-          <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-          <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-          <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        </ul>
       </div>
 
       <div class="contactForm">
@@ -302,6 +318,15 @@ VanillaTilt.init(tilt, {
 	gyroscopeMinAngleY: -45,
 	gyroscopeMaxAngleY: 45
 });
+}
+
+const loadPhotos = (quanPhotos) => {
+
+  for(let x=1;x<=quanPhotos;x++) {
+    document.querySelector(`.image-gallery-${x}`).addEventListener("load",()=>{
+      document.querySelector(`.spinner-image-${x}`).innerHTML=``;
+    });
+  }
 }
 
 //Generar galeria fotos

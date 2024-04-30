@@ -1,6 +1,7 @@
-
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
 .box-confianza {
 
+  font-family: "League Spartan", system-ui, sans-serif;
   margin: 35px 0 35px 0;
   display: flex;
   flex-direction: column;
@@ -38,7 +39,7 @@
   
 }
 .flex-container .flex-item {
-  width: 50px;
+  width: 70px;
   margin: 25px;
   border-radius: 2px;
   padding: 4.5em 5em;
@@ -50,13 +51,7 @@
         box-shadow: 0 0 3pt 2pt red;
     }
 .flex-container .flex-item a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -90,25 +85,94 @@
 }
 
 .bg-one {
-  background: linear-gradient(45deg, #ff194b, #8215f0);
+  background: linear-gradient(45deg, #000000, #9889a7);
 }
 
 .bg-two {
-  background: linear-gradient(45deg, #ff5f4b, #821564);
+  background: linear-gradient(45deg, #a09f9f, #383036);
 }
 
 .bg-three {
-  background: linear-gradient(45deg, #ff00bb, #82000f);
+  background: linear-gradient(45deg, #9889a7, #000000);
 }
 
-.flex-item span > img {
-  width:200px;
-}
 .flex-item .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color:white;
   font-weight:800;
   font-family:Courier;
-  font-size:12px;
-  position:absolute;
   bottom:20px;
+}
+
+.flex-item .text h2 {
+  border: solid 3px white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 1000;
+}
+
+.flex-item .text ul { 
+
+  list-style: none;
+  position: relative;
+  margin-top: 20px;
+
+}
+
+.flex-item .text ul li {
+ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 15px 0 15px 0;
+}
+
+.flex-item .text ul li img {
+
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.flex-item .text ul li p {
+  font-size: 19px;
+}
+
+@media (min-width: 350px) AND (max-width: 449px) {
+  .box-confianza h1 {
+    font-size: 25px;
+    width: 65%;
+  }
+
+  .flex-container .flex-item {
+    width: 50px;
+    margin-top: 50px;
+  }
+
+  .flex-item .text h2 {
+    transform: scale(.9);
+  }
+}
+
+@media (min-width: 450px) AND (max-width: 650px)  {
+  .flex-container .flex-item {
+    width: 60px;
+    margin-top: 50px;
+  }
+
+  .flex-item .text h2 {
+    transform: scale(.95);
+  }
+}
+
+@media (min-width: 651px) AND (max-width: 901px) {
+  .flex-container .flex-item {
+
+    margin-top: 50px;
+  }
 }
