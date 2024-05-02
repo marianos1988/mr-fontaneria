@@ -7,17 +7,17 @@ const index = `
   <section class="container-index">
     <article class="card-presentation">
       <div class="card">
-        <img src="./img/card-presentation.jpg" />
+        <img src="./img/card-presentation.jpg" alt="Fontaneria Provincia Vizkaya"/>
         <div>
-          <h2>Taller de Fontaneria</h2>
+          <h2 alt="Reparacion tuberias AFS ACS">Taller de Fontaneria</h2>
           <h3>Servicio de fontaneria con amplia experiencia en el sector</h3>
           <p>
             Localizacion y reparacion de tuberias AFC, ACS, calefaccion, gas y aire acondicionado
           </p>
           <button>Contacto:</button>
           <div class="box-icos">
-            <a href="tel:+34690644690"><img class="tel" src="./img/tel.png" alt=""></a>
-            <a href="https://wa.me/34690644690" target="_blank"><img class="ws" src="./img/whatsapp.png" alt=""></a>
+            <a href="tel:+34690644690"><img class="tel" src="./img/tel.png" alt="Reparacion aire acondicionados sestao"></a>
+            <a href="https://wa.me/34690644690" target="_blank"><img class="ws" src="./img/whatsapp.png" alt="Fontaneria Bilbao"></a>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@ const servicios = `
     </div>
     </article>
     <article class="container-servicios">
-    <h2>Servicios Especializados</h2>
+    <h2 alt="reparaciones tuberias AFS ACS">Servicios Especializados</h2>
     <div class="slider-servicios">
       <div class="wrapper-servicios">
         <div class="left-servicios">
