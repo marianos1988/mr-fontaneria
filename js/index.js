@@ -9,10 +9,10 @@ const index = `
       <div class="card">
         <img src="./img/card-presentation.jpg" alt="Fontaneria Provincia Vizkaya"/>
         <div>
-          <h2 alt="Reparacion tuberias AFS ACS">Taller de Fontaneria</h2>
-          <h3>Servicio de fontaneria con amplia experiencia en el sector</h3>
+          <h2 alt="Reparacion tuberias AFS ACS">Taller de Fontanería</h2>
+          <h3>Servicio de fontanería con amplia experiencia en el sector</h3>
           <p>
-            Localizacion y reparacion de tuberias AFC, ACS, calefaccion, gas y aire acondicionado
+            Localización y reparación de tuberías AFC, ACS, calefacción, gas y aire acondicionado
           </p>
           <button>Contacto:</button>
           <div class="box-icos">
@@ -39,7 +39,7 @@ const index = `
               </li>
               <li>
                 <img src="./img/tilde.png">
-                <p>Informe tecnico del trabajo a realizar</p>  
+                <p>Informe técnico del trabajo a realizar</p>  
               </li>
             </ul>
           </div>
@@ -77,7 +77,7 @@ const index = `
               </li>
               <li>
                 <img src="./img/tilde.png">
-                <p>Vida util de los materiales garantizados</p>  
+                <p>Vida útil de los materiales garantizados</p>  
               </li>
             </ul>
           </div>
@@ -110,16 +110,16 @@ const servicios = `
       <div class="wrapper-servicios">
         <div class="left-servicios">
           <div>
-            <h2>Fontaneria</h2>
+            <h2>Fontanería</h2>
             <p>
-              Trabajos de fontaneria, reparaciones o sustitucion de líneas de drenaje rotas, drenajes obstruidos, grifos, etc. 
+              Trabajos de fontanería, reparaciones o sustitución de líneas de drenaje rotas, drenajes obstruidos, grifos, etc. 
             </p>
           </div>
 
           <div>
             <h2>Calefacción</h2>
             <p>
-              Instalación de tuberías de calefacción para agua caliente o fría. Instalacion de suelos radiantes, mantenimiento y mejoras.
+              Instalación de tuberías de calefacción para agua caliente o fría. Instalación de suelos radiantes, mantenimiento y mejoras.
             </p>
           </div>
 
@@ -179,7 +179,7 @@ const contacto = `
     <div class="content">
       <h2>Contactanos</h2>
       <p>
-        Ponete en contacto con nosotros para solicitar presupuestos o visitas tecnicas
+        Ponte en contacto con nosotros para solicitar presupuestos o visitas tecnicas
       </p>
     </div>
     <div class="container">
@@ -194,7 +194,7 @@ const contacto = `
         <div class="box">
           <a href="tel:+34690644690"><div class="box-ico-data" target="_blank"></div><div class="icon"><ion-icon class="ion-icon" name="call-outline"></ion-icon></div></a>
           <div class="text">
-            <h3>Telefono</h3>
+            <h3>Teléfono</h3>
             <p>34 690 644690
             </p>
           </div>
@@ -229,11 +229,11 @@ const contacto = `
           </div>
           <div class="inputBox">
             <input type="text" name="phone" id="form-phone" required="required">
-            <span>Telefono</span>
+            <span>Teléfono</span>
           </div>
           <div class="inputBox">
             <textarea required="required" name="comment" id="form-comments"></textarea>
-            <span>Escribi tu consulta...</span>
+            <span>Escribí tu consulta...</span>
           </div>
           <div class="inputBox">
             <!-- <input type="submit" value="Enviar"> -->
