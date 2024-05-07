@@ -7,17 +7,17 @@ const index = `
   <section class="container-index">
     <article class="card-presentation">
       <div class="card">
-        <img src="./img/card-presentation.jpg" alt="Fontaneria Provincia Vizkaya"/>
+        <img src="./img/card-presentation.jpg" alt="Taller de Fontaneria Localizacion y reparacion de Tuberias AFS ACS Calefaccion gas y aire acondicionado"/>
         <div>
           <h2 alt="Reparacion tuberias AFS ACS">Taller de Fontanería</h2>
           <h3>Servicio de fontanería con amplia experiencia en el sector</h3>
           <p>
-            Localización y reparación de tuberías AFC, ACS, calefacción, gas y aire acondicionado
+            Localización y reparación de tuberías AFS, ACS, calefacción, gas y aire acondicionado
           </p>
           <button>Contacto:</button>
           <div class="box-icos">
-            <a href="tel:+34690644690"><img class="tel" src="./img/tel.png" alt="Reparacion aire acondicionados sestao"></a>
-            <a href="https://wa.me/34690644690" target="_blank"><img class="ws" src="./img/whatsapp.png" alt="Fontaneria Bilbao"></a>
+            <a href="tel:+34690644690"><img class="tel" src="./img/tel.png" alt="Contacte por telefono fontanero en Bilbao Sestao Vizkaya "></a>
+            <a href="https://wa.me/34690644690" target="_blank"><img class="ws" src="./img/whatsapp.png" alt="Contacte por whatsapp a fontanero en Bilbao Sestao Vizkaya"></a>
           </div>
         </div>
       </div>
@@ -185,14 +185,14 @@ const contacto = `
     <div class="container">
       <div class="contactInfo">
         <div class="box">
-          <a href="https://maps.app.goo.gl/37TAv5geV1Dncxrz9" target="_blank" alt="Provincia Vizkaya"><div class="icon"><ion-icon class="ion-icon" name="location-outline"></ion-icon></div></a>
+          <a href="https://maps.app.goo.gl/37TAv5geV1Dncxrz9" target="_blank"><div class="icon"><ion-icon class="ion-icon" name="location-outline"></ion-icon></div></a>
           <div class="text">
             <h3>Domicilio</h3>
             <p>Grupo Santiago Apóstol 2,<br>Sestao - Vizcaya,</p>
           </div>
         </div>
         <div class="box">
-          <a href="tel:+34690644690"><div class="box-ico-data" target="_blank"></div><div class="icon"><ion-icon class="ion-icon" name="call-outline"></ion-icon></div></a>
+          <a href="tel:+34690644690" ><div class="box-ico-data" target="_blank"></div><div class="icon"><ion-icon class="ion-icon" name="call-outline"></ion-icon></div></a>
           <div class="text">
             <h3>Teléfono</h3>
             <p>34 690 644690
